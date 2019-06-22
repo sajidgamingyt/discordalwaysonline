@@ -14,4 +14,4 @@ if(msg.author.id === client.user.id)
 }
 });
 
-client.login('MzY1ODY5NzM3MjY1MjAxMTYz.XQjAQw.XODj7MIh0AgFL4YVsfPQM0Pe6_s');
+client.login(process.env.BOT_TOKEN);

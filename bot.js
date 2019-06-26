@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setActivity('PUBG LITE', { type: 'PLAYING' });
+client.user.setActivity('seni', { type: 'WATCHING' });
 });
 
 client.on('message', msg => {

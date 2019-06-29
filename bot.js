@@ -12,8 +12,9 @@ if(msg.author.id === client.user.id)
 {
     const args = msg.content.slice(prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
+	let age = args[0];
 	if (command === 'ping') {
-		msg.channel.send('Pong ${args[0] abc}');
+		msg.channel.send('Pong ${args[0]} abc');
 	} else if (command === 'beep') {
 		msg.channel.send('Boop.');
 	}

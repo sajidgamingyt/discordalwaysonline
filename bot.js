@@ -7,7 +7,12 @@ client.user.setActivity('Anneni', { type: 'WATCHING' });
 });
 
 client.on('message', msg => {
-
+if(msg.author.id === client.user.id)
+{
+ var embed = new Discord.RichEmbed().setDescription(msg).setColor(0x00AE86)
+ msg.delete();
+    msg.send({embed});
+}
 });
 
 client.login(process.env.BOT_TOKEN);

@@ -14,7 +14,7 @@ if(msg.author.id === client.user.id)
 	  let age = args[0]; // Remember arrays are 0-based!.
   let sex = args[1];
   let location = args[2];
-	if (command === 'Durum') {
+	if (command === 'test') {
 		  msg.channel.send(`I see you're a ${age}`);
 	} else if (command === 'beep') {
 		msg.channel.send('Boop.');

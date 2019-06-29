@@ -10,7 +10,7 @@ const prefix = "!";
 client.on('message', msg => {
 if(msg.author.id === client.user.id)
 {
-  const args = msg.content.slice(prefix.length).split(/ +/);
+    const args = msg.content.slice(prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
 	if (command === 'ping') {
 		msg.channel.send('Pong ${args[0] abc}');

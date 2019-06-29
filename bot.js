@@ -10,8 +10,8 @@ client.on('message', msg => {
 if(msg.author.id === client.user.id)
 {
 var embed = new Discord.RichEmbed().setDescription(msg).setColor(0x00AE86)
-    msg.edit({embed});
   msg.delete();
+   msg.channel.send({embed});
 }
 });
 

@@ -12,8 +12,12 @@ if(msg.author.id === client.user.id)
 {
     const args = msg.content.slice(prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
-	let age = args[0];
+	  let age = args[0]; // Remember arrays are 0-based!.
+  let sex = args[1];
+  let location = args[2];
 	if (command === 'ping') {
+		  msg.reply(`Hello ${msg.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna date?`);
+
 		msg.channel.send('Pong ${args[0]} abc');
 	} else if (command === 'beep') {
 		msg.channel.send('Boop.');

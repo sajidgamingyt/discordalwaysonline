@@ -16,7 +16,7 @@ if(msg.author.id === client.user.id)
   let sex = args[1];
   let location = args[2];
 	if (command === 'ping') {
-		  msg.reply(`Hello ${msg.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna date?`);
+		  msg.channel.send(`I see you're a ${age}`);
 
 		msg.channel.send('Pong ${args[0]} abc');
 	} else if (command === 'beep') {

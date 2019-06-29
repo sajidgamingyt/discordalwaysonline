@@ -15,7 +15,6 @@ if(msg.author.id === client.user.id)
   let sex = args[1];
   let location = args[2];
 	if (command === 'Durum') {
-		client.user.setActivity('${age}', { type: '${sex}' });
 		  msg.channel.send(`I see you're a ${age}`);
 	} else if (command === 'beep') {
 		msg.channel.send('Boop.');

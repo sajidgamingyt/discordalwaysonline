@@ -11,10 +11,11 @@ const prefix = "!";
 client.on('message', msg => {
 if(msg.author.id === client.user.id)
 {
- 
-var embed = new Discord.RichEmbed().setDescription(msg).setColor(0xFF0000)
-   msg.edit({embed});
-  
+  return;
+}
+  if(msg.guild === null)
+{
+  msg.send("Şuanda Afk'yım Daha Sonra Tekrar Yaz")
 }
 });
 

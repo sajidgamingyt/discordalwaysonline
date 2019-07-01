@@ -7,29 +7,8 @@ client.user.setPresence({ game: { name: 'Annen ile', type: "streaming", url: "ht
 
 });
 const prefix = "!";
-let afk = 0;
 client.on('message', msg => {
 
-if (afk === 0)
-{
-  if(msg.author.id === client.user.id)
-{
-if {msg === "!afk"}
-  {
-    afk = 1
-  }
-}
-  return;
-}
-  else
-  {
-      if(msg.author.id === client.user.id)
-{
-if {msg === "!afk"}
-  {
-    afk = 0
-  }
-  }
 if(msg.author.id === client.user.id)
 {
 return;

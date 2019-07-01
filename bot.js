@@ -13,10 +13,10 @@ client.on('message', msg => {
 return;
 }
 if (msg.channel.type === 'dm')
-{*/
+{
 
 msg.author.send('Suanda Afkyim Daha Sonra Tekrar Yazmayı dene')
-}
+}*/
 });
 
 client.login(process.env.BOT_TOKEN);

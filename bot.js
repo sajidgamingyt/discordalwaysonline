@@ -8,15 +8,15 @@ client.user.setPresence({ game: { name: 'Porno', type: "watching", url: "https:/
 });
 const prefix = "!";
 client.on('message', msg => {
-/*if(msg.author.id === client.user.id)
+if(msg.author.id === client.user.id)
 {
 return;
 }
 if (msg.channel.type === 'dm')
 {
 
-msg.author.send('Suanda Afkyim Daha Sonra Tekrar Yazmayı dene')
-}*/
+msg.author.send('Suanda Afkyim Daha Sonra Tekrar Yazmayı dene');
+}
 });
 
 client.login(process.env.BOT_TOKEN);

@@ -15,7 +15,7 @@ return;
 if (msg.channel.type === 'dm')
 {
 
-msg.author.send('Suanda Uyuyorum Daha Sonra Tekrar Yazmayı dene')
+//msg.author.send('Suanda Uyuyorum Daha Sonra Tekrar Yazmayı dene')
 }
 });
 

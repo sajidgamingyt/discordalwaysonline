@@ -15,7 +15,7 @@ return;
 if (msg.channel.type === 'dm')
 {
 
-msg.author.send('Saat 17:00 a kadar yokum!')
+//msg.author.send('Saat 17:00 a kadar yokum!')
 }
 });
 

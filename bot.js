@@ -21,7 +21,7 @@ const activities_list = [
 
 client.on('ready', () => {
     setInterval(() => {
-        	setInterval(changeStatus, 1000)
+        changeStatus();
         client.user.setActivity(activities_list[status]);
     }, 1000); // Runs this every 10 seconds.
 });

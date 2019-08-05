@@ -1,5 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var status = 0
+function changeStatus() {
+	status++
+	if(status > 8) {
+		status = 0
+	}
+}
+
 
 const activities_list = [
     "w", 
@@ -13,8 +21,8 @@ const activities_list = [
 
 client.on('ready', () => {
     setInterval(() => {
-        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
-        client.user.setActivity(activities_list[index]);
+        	setInterval(changeStatus, 1000)
+        client.user.setActivity(activities_list[status]);
     }, 1000); // Runs this every 10 seconds.
 });
 

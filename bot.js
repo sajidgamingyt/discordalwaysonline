@@ -15,7 +15,7 @@ client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index]);
-    }, 500); // Runs this every 10 seconds.
+    }, 1000); // Runs this every 10 seconds.
 });
 
 

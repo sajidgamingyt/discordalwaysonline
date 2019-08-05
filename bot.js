@@ -1,11 +1,24 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setPresence({ game: { name: 'seni', type: "watching", url: "https://www.twitch.tv/progamerr478"}}); 
+const activities_list = [
+    "w", 
+    "wi",
+    "wit", 
+    "with",
+    "with y",
+    "with yo",
+    "with you",
+    ]; // creates an arraylist containing phrases you want your bot to switch through.
 
+client.on('ready', () => {
+    setInterval(() => {
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+        client.user.setActivity(activities_list[index]);
+    }, 500); // Runs this every 10 seconds.
 });
+
+
 const prefix = "!";
 client.on('message', msg => {
 if(msg.author.id === client.user.id)

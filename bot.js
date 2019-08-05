@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let activenum = 1;
+let activenum = 0;
 const activities_list = [
     "w", 
     "wi",

@@ -23,7 +23,7 @@ client.on('ready', () => {
     setInterval(() => {
         changeStatus();
         client.user.setActivity(activities_list[status]);
-    }, 1000); // Runs this every 10 seconds.
+    }, 500); // Runs this every 10 seconds.
 });
 
 

@@ -17,6 +17,7 @@ client.on('ready', () => {
 	{
 		activenum = 0;
 	}
+	    activenum += 1;
         client.user.setActivity(activities_list[activenum]);
     }, 500); // Runs this every 10 seconds.
 });

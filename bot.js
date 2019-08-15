@@ -2,24 +2,21 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 let activenum = 0;
 const activities_list = [
-    "w", 
-    "wi",
-    "wit", 
-    "with",
-    "with y",
-    "with yo",
-    "with you",
+    "idle", 
+    "online",
+    "distrub", 
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 client.on('ready', () => {
     setInterval(() => {
-        if (activenum === 8)
+        if (activenum === 4)
 	{
 		activenum = 0;
 	}
 	    activenum += 1;
-        client.user.setActivity(activities_list[activenum]);
-    }, 2000); // Runs this every 10 seconds.
+client.user.setPresence({ game: { name: 'with discord.js' , type: 'WATCHING' }, status: activities_list[activenum] })
+    .then(console.log)
+    .catch(console.error);    }, 2000); // Runs this every 10 seconds.
 });
 
 

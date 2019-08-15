@@ -14,7 +14,7 @@ client.on('ready', () => {
 		activenum = 0;
 	}
 	    activenum += 1;
-client.user.setPresence({ game: { name: 'with discord.js' , type: 'WATCHING' }, status: activities_list[activenum] })
+client.user.setPresence({ game: { name: 'with You' , type: 'WATCHING' }, status: activities_list[activenum] })
     .then(console.log)
     .catch(console.error);    }, 2000); // Runs this every 10 seconds.
 });

@@ -8,13 +8,8 @@ const activities_list = [
     ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 client.on('ready', () => {
-    setInterval(() => {
-        if (activenum === 4)
-	{
-		activenum = 0;
-	}
-	    activenum += 1;
- bot.user.setPresence({
+    client.user.setStatus('available')
+    client.user.setPresence({
         game: {
             name: 'DM FOR BUY KEY',
             type: "STREAMING",

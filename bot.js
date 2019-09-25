@@ -27,7 +27,7 @@ return;
 }
 if (msg.channel.type === 'dm')
 {
-if(msg.content.toLowerCase().includes('free key')))
+if(msg.content.includes('free key')))
 {
   msg.author.send('GO BUY ONE NO FREE KEYS HERE');
 

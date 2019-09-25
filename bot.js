@@ -27,8 +27,9 @@ return;
 }
 if (msg.channel.type === 'dm')
 {
-if(msg.content.includes('free key')) {
-  msg.author.send('GO BUY ONE NO FREE KEYS HERE')
+if(msg.content.includes('free key').toLowerCase())
+{
+  msg.author.send('GO BUY ONE NO FREE KEYS HERE');
 
 }
 }

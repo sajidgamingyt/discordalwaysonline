@@ -1,11 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 let activenum = 0;
-const activities_list = [
-    "idle", 
-    "online",
-    "distrub", 
-    ]; // creates an arraylist containing phrases you want your bot to switch through.
 
 client.on('ready', () => {
     client.user.setStatus('available')
@@ -17,7 +12,7 @@ client.on('ready', () => {
         }
     });
 });
-client.on('message', msg => {
+client.on('message', message => {
 
 });
 
